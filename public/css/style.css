@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+@font-face {
+font-family: 'Ubuntu'; 
+src: local('Ubuntu'),
+    url(../Ubuntu/Ubuntu-Bold.ttf); 
+}
+
+
+@font-face {
+font-family: 'montserrat'; 
+src: local('montserrat'),
+    url(../montserrat/Montserrat-ExtraLight.woff); 
+} 
+
+.body{
+    background-color: #b7ff74;
+
+}
+
+* {
+    
+    scrollbar-width: thin;
+    scrollbar-color: blue rgb(251, 63, 1);
+  }
+  
+  /* Работает в Chrome, Edge и Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(251, 63, 1);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
+  }
+
+.main{
+  position: absolute;
+  top: 70px;
+  left: 122px;
+}
+
+.pos-text{
+
+  margin-top: 100px;
+
+}
+
+.main-text{
+
+  width: 696px;
+  color: #000000;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46.4px; /* 135% */
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+}
+
+.text-info-mini{
+    position: absolute;
+    width: 596px;
+    font-family:'Courier New', Courier, monospace ;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    top: 300px;
+
+}
+
+
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+   
+.text-info-mini {
+
+  animation: example 5s;
+      
+}
+     
+@keyframes example {
+      0%{
+          opacity: 0;
+      }
+      20%{
+        opacity: 1;
+    }
+    40%{
+      opacity: 2;
+  }
+  60%{
+    opacity: 3;
+  }
+    
+      100%{
+          opacity: 4;
+      }
+   }
+
+.btn-start{
+
+    display: flex;
+    text-decoration: none;
+    width: 240px;
+    height: 60px;
+    margin-top: 200px;
+    padding: 4.95px 29.405px 6.05px 29.595px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #FF5F00;
+    color: #000000;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.6px; /* 103.333% */
+}
+
+.btn-start:hover{
+
+  background-color: #FF5F00;
+
+}
+
+.img-pos{
+
+  position:absolute; 
+  right: 50px; 
+  top: 10px
+
+}
+
+.info-block{
+  position: absolute;
+  top: 700px;
+  width: 100%;
+  height: 2200px;
+
+}
+
+.img-IT-pos{
+
+  position: absolute;
+  right:122px;
+  margin-top: 100px;
+}
+
+
+.img-it{
+
+  width: 500px;
+
+}
+.btn {
+  text-decoration: none;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  width: 280px;
+  height: 70px;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  z-index: 2;
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1)
+}
+
+.btn:active {
+  border: double 4px #FE53BB;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #FE53BB;
+}
+
+
